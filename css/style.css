@@ -2,52 +2,308 @@
 
 
 :root {
-    --color-body: #686466;
-    --color2: #839cb5;
-    --color3: #96d7eb;
+    --color-body: #ffffff;
+    --color-nav: rgba(13, 13, 13, .9);
+    --color3: #e9eced;
     --color4: #b1e1e9;
-    --color5: #f2e4f9;
+    --color5: #ffffff;
+    --margin: 15px;
+    --height-nav: 45px;
 }
 
 .container {
-    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-body);
+    font-family: "Poppins", Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: var(--color-body);
+    background-color: ;
 }
 
-.container {
-    max-width: 1270px;
-
-}
 
 /* estilos para el menu */
-.header{
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: var(--height-nav);
+    margin-bottom: 15px;
+}
+
+.nav__title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.nav__menu-img {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 45px;
+    height: 50px;
+    z-index: 100;
+    transition: filter 300ms;
+}
+
+.nav__menu-img-blank {
+    filter: invert(100%);
+}
+
+.nav__menu {
+    cursor: pointer;
+    transition: background-color 400ms;
+}
+
+.nav__menu:hover {
+    background-color: #f3f4f5;
+}
+
+.nav__link-contain {
+    position: absolute;
+    background-color: var(--color-nav);
+    width: 60vh;
+    height: 100vh;
+    top: -700px;
+    right: 0;
+    transition: top 400ms;
+    border-color: #f3f4f5;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+.nav__link-contain-active {
+    top: var(--height-nav);
+}
+
+
+.nav__link--menu {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4em;
+
+}
+
+
+.nav__items {
+    color: var(--color5);
+
+}
+
+.nav__link {
+    color: var(--color5);
+    font-weight: 700;
+    font-size: 1em;
+    transition: border-bottom 500ms;
+    height: 100%;
     width: 100%;
-    height: 70px;
-    max-height: 75px;
-    overflow: hidden;
+}
+
+.nav .nav__link:hover {
+    border-bottom: 1px solid white;
+}
+
+.nav__hero-img {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/main-img/Lapto.jpg');
+    background-position: top;
+    background-size: cover;
 
 }
-.nav__items{
-    margin-left:auto;
+
+.nav__logo {
+    
+}
+
+/*about section*/
+.section-about {
+    background-color: var(--color3);
+    height: 100vh;
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+}
+
+.about {
     display: grid;
-    padding: 0;
-    grid-auto-flow: column;
-    grid-template-columns: max-content;
+    height: 100%;
+    margin-top: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
 
 }
 
 
+.about__title {
+    font-weight: 700;
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 25px;
+}
 
-.nav__item-menu{
+.about__paragrahp {
+    text-align: center;
+    font-size: 20px;
+}
+
+.about-img-contain {
+    height: 50vh;
+    border: 30px;
+    border-radius: 30%;
+    border-color: black;
+}
+
+.about-img-contain img {
+    height: 50vh;
+    object-position: top center;
+}
+
+/* Proyects section*/
+.proyects__contain {
+    padding-top: var(--margin);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
+    grid-auto-rows: 1fr;
+    place-content: center;
+    grid-gap: 4rem;
 
 }
+
+.proyects__preview {
+
+}
+
+.proyects_img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    transition-duration: 400ms ;
+    transition-property: box-shadow transform;
+
+}
+
+.proyects_img:hover {
+    transform: translateY(-2px);
+    -webkit-box-shadow: -12px 3px 26px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -12px 3px 26px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: -12px 3px 26px -6px rgba(0, 0, 0, 0.75);
+}
+
+.proyects__title {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.proyects__title h3 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/*Technologies*/
+.technologies-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 200px;
+    margin-top: 25px;
+}
+
+.technologies-subtitle {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.technologies-img {
+    height: 150px;
+}
+
+/*Footer*/
+.footer{
+    height: 30vh;
+    background-color: #dee0e0;
+
+}
+.footer .nav__link{
+    color: black;
+}
+.nav__links{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+@media (min-width: 900px) and (max-width: 1400px) {
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: var(--height-nav);
+        margin-bottom: unset;
+    }
+  
+    .nav__link-contain{
+        position: relative;
+        top: unset;
+        background-color: unset;
+        height: unset;
+        width: unset;
+
+    }
+    .nav__link--menu {
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 1em;
+    
+    }
+
+    
+    .nav .nav__link {
+        color: #000;
+        font-weight: 700;
+        font-size: 1em;
+        transition: border-bottom 500ms;
+        height: unset;
+        width: unset;
+    }
+    .nav .nav__link:hover {
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    .nav__menu{
+        display: none;
+    }
+    .nav__title {
+        text-align: center;
+        font-size: 30px;
+    }
+ }
