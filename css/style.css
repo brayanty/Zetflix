@@ -282,9 +282,18 @@ body {
 .footer .nav__link{
     color: black;
 }
-.nav__links{
+.nav__footer{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-area: 'navLinkFooter navLinkFooter navLinkFooter'
+               'navLinkFooter navLinkFooter navLinkFooter'
+                'copyrigth copyrigth                     ';
+}
+
+.nav__link--footer{
+    grid-template-areas: navLinkFooter;
+}
+.copyrigth{
+    grid-template-areas: copyrigth;
 }
 
 @media (min-width: 900px) and (max-width: 1400px) {
@@ -342,4 +351,13 @@ body {
         border-radius: 7px;
         
     }
+    /*hero*/
+    .hero__text{
+        font-size: 1.1renm;
+    }
+    .hero__about{
+        font-size: 1.4em;
+    }
+
+
  }
