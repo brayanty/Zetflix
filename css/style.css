@@ -34,7 +34,7 @@ body {
     background-color: rgb(238, 238, 238);
 }
 
-.title{
+.title {
     font-weight: 700;
     font-size: 2.2em;
     font-size: 40px;
@@ -47,6 +47,7 @@ body {
     align-items: center;
     text-align: center;
     height: var(--height-nav);
+    z-index: 100;
 }
 
 .nav__title {
@@ -61,7 +62,7 @@ body {
     height: 45px;
     z-index: 100;
     transition: filter 300ms;
-    
+
 }
 
 .nav__menu-img-blank {
@@ -119,7 +120,7 @@ body {
     transition: border-bottom 600ms;
     height: 100%;
     width: 100%;
-    
+
 }
 
 .nav .nav__link:hover {
@@ -134,7 +135,7 @@ body {
     border-radius: 13px;
 }
 
-.hero::before {
+.header::before {
     content: "";
     position: absolute;
     top: 0;
@@ -146,7 +147,7 @@ body {
     z-index: -1;
 }
 
-.hero__content{
+.hero__content {
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -155,17 +156,16 @@ body {
     text-align: center;
 }
 
-.hero__title, .hero__text {
+.hero__title,
+.hero__text {
     color: #ffffff;
 }
 
-.nav__logo {
-    
-}
+.nav__logo {}
 
 /*about section*/
 .section-about {
-    height: 30vh;
+    height: 40vh;
 }
 
 .about {
@@ -183,6 +183,7 @@ body {
 .about__title {
     text-align: center;
     margin-bottom: 25px;
+    line-height: 1em;
 }
 
 .about__paragrahp {
@@ -197,10 +198,10 @@ body {
     border: 30px;
     border-radius: 30%;
     border-color: black;
-    
+
 }
 
-.about-img-contain img{
+.about-img-contain img {
     display: none;
 }
 
@@ -217,16 +218,14 @@ body {
 
 }
 
-.proyects__preview {
-
-}
+.proyects__preview {}
 
 .proyects_img {
     position: relative;
     height: 100%;
     width: 100%;
     border-radius: 15px;
-    transition-duration: 400ms ;
+    transition-duration: 400ms;
     transition-property: box-shadow transform;
 
 }
@@ -274,40 +273,55 @@ body {
 }
 
 /*Footer*/
-.footer{
+.footer {
     height: 30vh;
     background-color: #dee0e0;
 
 }
-.footer .nav__link{
+
+.footer .nav__link {
     color: black;
 }
-.nav__footer{
-    display: grid;
-    grid-area: 'navLinkFooter navLinkFooter navLinkFooter'
-               'navLinkFooter navLinkFooter navLinkFooter'
-                'copyrigth copyrigth                     ';
+
+.nav__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
-.nav__link--footer{
-    grid-template-areas: navLinkFooter;
+.nav__link--footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.4em;
 }
-.copyrigth{
-    grid-template-areas: copyrigth;
+
+.copyrigth {
+    text-align: center;
 }
 
 @media (min-width: 900px) and (max-width: 1400px) {
+
     /*nav*/
     .nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
         text-align: center;
         height: var(--height-nav);
         margin-bottom: unset;
+        transition: background-color 500ms;
     }
-  
-    .nav__link-contain{
+    .nav--stiky-black{
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    .nav__link-contain {
         position: relative;
         top: unset;
         background-color: unset;
@@ -315,6 +329,7 @@ body {
         width: unset;
 
     }
+
     .nav__link--menu {
         display: flex;
         margin-top: 25px;
@@ -322,10 +337,10 @@ body {
         align-items: center;
         flex-direction: row;
         gap: 1em;
-    
+
     }
 
-    
+
     .nav .nav__link {
         font-weight: 700;
         font-size: 1em;
@@ -333,31 +348,42 @@ body {
         height: unset;
         width: unset;
     }
+
     .nav .nav__link:hover {
         border-bottom: 1px solid rgb(255, 255, 255);
     }
-    .nav__menu{
+
+    .nav__menu {
         display: none;
     }
+
     .nav__title {
         text-align: center;
         font-size: 30px;
     }
+
     /*about contain*/
     .about-img-contain img {
         display: block;
         height: 50vh;
         object-position: top center;
         border-radius: 7px;
-        
+
     }
+
     /*hero*/
-    .hero__text{
+    .hero__text {
         font-size: 1.1renm;
     }
-    .hero__about{
+
+    .hero__about {
         font-size: 1.4em;
     }
 
+    .about__paragrahp {
+        line-height: 1.3em;
+        font-weight: 600;
+    }
 
- }
+
+}
