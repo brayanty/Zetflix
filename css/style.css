@@ -85,11 +85,13 @@ body {
     border-color: #f3f4f5;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-
 }
 
 .nav__link-contain-active {
     top: var(--height-nav);
+}
+.nav__link-contain-disable {
+    top: -1800px;
 }
 
 
@@ -314,7 +316,9 @@ body {
         transition: background-color 500ms;
     }
     .nav--stiky-black{
-        background-color: rgba(0, 0, 0, 0.75);
+        background: rgba(19, 19, 19, 0.3);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
     }
 
     .nav__link-contain {

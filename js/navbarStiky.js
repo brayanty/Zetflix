@@ -1,6 +1,5 @@
 // Cuando el usuario se desplaza por la página, ejecuta myFunction
 window.onscroll = function() {myFunction()};
-
 // Obtener la barra de navegación
 const navbar = document.querySelector(".nav");
 
@@ -16,5 +15,9 @@ function myFunction() {
     navbar.classList.add("nav--stiky-black")
   } else {
     navbar.classList.remove("nav--stiky-black");
+  }
+  if(window.scrollY >= 400){
+    nav_items.classList.remove('nav__link-contain-active');
+    nav_items.classList.add('nav__link-contain-disable');
   }
 }
