@@ -62,10 +62,6 @@ body {
     height: 45px;
     z-index: 100;
     transition: filter 300ms;
-
-}
-
-.nav__menu-img-blank {
     filter: invert(100%);
 }
 
@@ -83,7 +79,7 @@ body {
     background-color: var(--color-nav);
     width: 60vh;
     height: 100vh;
-    top: -700px;
+    top: -1800px;
     right: 0;
     transition: top 400ms;
     border-color: #f3f4f5;
@@ -384,6 +380,11 @@ body {
         line-height: 1.3em;
         font-weight: 600;
     }
-
+    /*FOOTER*/
+    .footer{
+        margin-top: 25px;
+        border-top-right-radius: 14px;
+        border-top-left-radius: 14px;
+    }
 
 }
