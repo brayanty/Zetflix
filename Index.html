@@ -7,6 +7,8 @@
     <title>Zetflix</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Aweso -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +25,7 @@
             <div class="nav__link-contain ">
                 <ul class="nav__links nav__link--menu">
                     <li class="nav__items"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__items"><a href="#aboutme" class="nav__link">About we</a></li>
+                    <li class="nav__items"><a href="#aboutme" class="nav__link">About us</a></li>
                     <li class="nav__items"><a href="#proyects" class="nav__link">Proyects</a></li>
                     <li class="nav__items"><a href="#contacts" class="nav__link">Contacts</a></li>
 
@@ -38,7 +40,7 @@
             <div class="hero__content">
                 <h3 class="hero__title title">Welcome to Zetflix</h3>
                 <p class="hero__text"><span class="hero__about">What is Zetflix?</span>
-                It is nothing more than a project that can improve</p>
+                    It is nothing more than a project that can improve</p>
             </div>
         </div>
 
@@ -48,9 +50,10 @@
         <section id="aboutme" class="section-about">
             <div class="about container">
                 <div class="about-item about-text-contain">
-                    <h2  class="about__title title">About us?</h2>
+                    <h2 class="about__title title">About us?</h2>
                     <p class="about__paragrahp">
-                        Currently, this team is made up of only one person, which is me... my name is Brayan Palacios, self-taught Front-End. </p>
+                        Currently, this team is made up of only one person, which is me... my name is Brayan Palacios,
+                        self-taught Front-End. </p>
                 </div>
                 <div class="about-item about-img-contain">
                     <img src="img/main-img/desarrolladores.jpg" alt="imagen fotografica de un grupo de personas">
@@ -60,14 +63,18 @@
 
         <section id="proyects">
             <div class="proyects__title">
-                <h3>Projects carried out 'There are none xd'</h3>
+                <h3>Projects carried out</h3>
             </div>
-            <div class="proyects__contain">
+            <div class="proyects__contain container">
                 <article class="proyects__preview">
                     <div class="proyects__preview-img">
-                        <img class="proyects_img" src="img/main-img/Lapto.jpg" alt="vista previa del proyecto 1">
+                        <img class="proyects_img" src="img/main-img/Galeria.png" alt="vista previa del proyecto 1">
                     </div>
-                    <h3 class="proyects__preview-title">Pagina para un medico</h3>
+                    <div class="project-text">
+                        <h3 class="proyects__preview-title">Galeria de imagenes</h3>
+                        <a class="btn-go" href="https://brayanty.github.io/Galeria/" target="_blank"
+                            rel="noopener noreferrer">Ir</a>
+                    </div>
                 </article>
                 <article class="proyects__preview">
                     <div class="proyects__preview-img">
@@ -160,10 +167,15 @@
     <footer id="contacts" class="footer container">
         <nav class="nav__footer">
             <ul class="nav__links nav__link--footer">
-                <li class="nav__items  "><a href="https://instagram.com/elbrayanp2003/" class="nav__link">Instagram</a></li>
-                <li class="nav__items  "><a href="https://github.com/brayanty" class="nav__link">Githud</a></li>
-                <li class="nav__items  "><a href="mailto:2003brayan2@gmail.com" class="nav__link">Gmail</a></li>
-                <li class="nav__items  "><a href="https://twitter.com/ElBrayanP21" class="nav__link">Twiter</a></li>
+                <li class="nav__items  "><a href="https://instagram.com/elbrayanp2003/" class="nav__link"
+                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                </li>
+                <li class="nav__items "><a href="https://github.com/brayanty" class="nav__link" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-github fa-lg"></i></a></li>
+                <li class="nav__items "><a href="mailto:2003brayan2@gmail.com" class="nav__link" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-solid fa-envelope fa-lg"></i></a></li>
+                <li class="nav__items "><a href="https://twitter.com/ElBrayanP21" class="nav__link" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-x-twitter fa-lg"></i></a></li>
 
             </ul>
             <div class="copyrigth">
@@ -174,6 +186,7 @@
 
     <script src="js/menu.js"></script>
     <script src="js/navbarStiky.js"></script>
+    <script src="https://kit.fontawesome.com/0effce0025.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
