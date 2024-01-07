@@ -67,8 +67,15 @@ body {
     height: var(--height-nav);
     z-index: 100;
 }
-
-.nav__title {
+.nav__logo{
+    display: flex;
+    flex-direction: row;
+}
+.nav__text{
+    color: #ffff;
+}
+.nav__img {
+    height: 50px;
 }
 
 .nav__menu-img {
