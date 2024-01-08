@@ -1,6 +1,7 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-
+/* Variables */
 :root {
     --color-body: #ffffff;
     --color-nav: rgba(13, 13, 13, .9);
@@ -9,6 +10,15 @@
     --color5: #ffffff;
     --margin: 15px;
     --height-nav: 60px;
+}
+
+/* General Styles */
+body {
+    background-color: var(--color-body);
+    font-family: "Poppins", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(238, 238, 238);
 }
 
 .container {
@@ -24,9 +34,9 @@ ul {
 
 a {
     text-decoration: none;
-
 }
 
+/* Buttons */
 .btn-go {
     height: min-content;
     padding: 10px 20px;
@@ -45,21 +55,14 @@ a {
     background-color: #425142;
 }
 
-body {
-    background-color: var(--color-body);
-    font-family: "Poppins", Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(238, 238, 238);
-}
-
+/* Titles */
 .title {
     font-weight: 700;
     font-size: 2.2em;
     font-size: 40px;
 }
 
-/* estilos para el menu */
+/* Navigation Styles */
 .nav {
     display: flex;
     justify-content: center;
@@ -68,13 +71,16 @@ body {
     height: var(--height-nav);
     z-index: 100;
 }
-.nav__logo{
+
+.nav__logo {
     display: flex;
     flex-direction: row;
 }
-.nav__text{
+
+.nav__text {
     color: #ffff;
 }
+
 .nav__img {
     height: 50px;
 }
@@ -98,6 +104,7 @@ body {
     background-color: #f3f4f5;
 }
 
+/* Navigation Links */
 .nav__link-contain {
     position: absolute;
     background-color: var(--color-nav);
@@ -119,7 +126,6 @@ body {
     top: -1800px;
 }
 
-
 .nav__link--menu {
     display: flex;
     margin-top: 25px;
@@ -127,13 +133,10 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 4em;
-
 }
-
 
 .nav__items {
     color: var(--color5);
-
 }
 
 .nav__link {
@@ -143,13 +146,13 @@ body {
     transition: border-bottom 600ms;
     height: 100%;
     width: 100%;
-
 }
 
 .nav .nav__link:hover {
     border-bottom: 1px solid white;
 }
 
+/* Hero Section */
 .nav__hero-img {
     width: 100%;
     height: 100vh;
@@ -186,8 +189,7 @@ body {
     text-wrap: wrap;
 }
 
-
-/*about section*/
+/* About Section */
 .section-about {
     height: 40vh;
 }
@@ -200,9 +202,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2em;
-
 }
-
 
 .about__title {
     text-align: center;
@@ -213,7 +213,6 @@ body {
 .about__paragrahp {
     text-align: center;
     font-size: 20px;
-
 }
 
 .about-img-contain {
@@ -222,27 +221,25 @@ body {
     border: 30px;
     border-radius: 30%;
     border-color: black;
-
 }
 
 .about-img-contain img {
     display: none;
 }
 
-
-
-/* Proyects section*/
+/* Projects Section */
 .proyects__contain {
+    width: 90%;
     padding-top: var(--margin);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-auto-rows:100vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 100vh;
     place-content: center;
     grid-gap: 2.4em;
     overflow: unset;
 }
 
-.proyects__preview{
+.proyects__preview {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -256,14 +253,14 @@ body {
     transition-property: box-shadow transform;
 }
 
-.project-text{
+.project-text {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     color: #ffffff;
     text-shadow: #413838 -2px 1px 4px;
-
 }
 
 .proyects__preview:hover {
@@ -271,6 +268,11 @@ body {
     -webkit-box-shadow: -12px 3px 26px -6px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -12px 3px 26px -6px rgba(0, 0, 0, 0.75);
     box-shadow: -12px 3px 26px -6px rgba(0, 0, 0, 0.75);
+}
+
+.proyects__preview-title {
+    text-align: center;
+    text-wrap: wrap;
 }
 
 .proyects__title {
@@ -287,36 +289,42 @@ body {
     font-weight: 700;
 }
 
-/*Technologies*/
-
-.Tech-items{
+/* Technologies */
+.Tech-items {
     display: inline-block;
 }
-.tech-subtitle{
-        font-size: 2em;
+
+.tech-subtitle {
+    font-size: 2em;
 }
-.tech-text{
+
+.tech-text {
     display: inline-block;
     padding: 13px 7px;
     border-radius: 7px;
     background-color: #210d25;
     color: #e9ebf2;
     font-weight: 700;
-
 }
 
-/*Footer*/
+/* Footer */
 .footer {
     height: 30vh;
     width: 100%;
     background-color: #dee0e0;
-
 }
 
 .footer .nav__link {
     color: black;
 }
-
+.footer .nav__items{
+    transition-property: transform;
+    transition-duration: 380ms;
+}
+.footer .nav__items:hover{
+    transform: translateY(-4px);
+    box-shadow: ;
+}
 
 .nav__footer {
     display: flex;
@@ -333,7 +341,8 @@ body {
     gap: 1.4em;
     padding: 0;
 }
-.nav__link--footer .nav__link{
+
+.nav__link--footer .nav__link {
     font-size: 25px;
 }
 
@@ -341,9 +350,9 @@ body {
     text-align: center;
 }
 
+/* Media Queries */
 @media (min-width: 900px) and (max-width: 1400px) {
-
-    /*nav*/
+    /* Navigation */
     .nav {
         position: fixed;
         top: 0;
@@ -369,7 +378,6 @@ body {
         background-color: unset;
         height: unset;
         width: unset;
-
     }
 
     .nav__link--menu {
@@ -379,9 +387,7 @@ body {
         align-items: center;
         flex-direction: row;
         gap: 1em;
-
     }
-
 
     .nav .nav__link {
         font-weight: 700;
@@ -403,24 +409,24 @@ body {
         text-align: center;
         font-size: 30px;
     }
-    /*Proyect contain*/
-    .proyects__contain{
-        grid-template-rows: 22em;
 
+    /* Project Container */
+    .proyects__contain {
+        grid-auto-rows: 22em;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 
-    /*about contain*/
+    /* About Container */
     .about-img-contain img {
         display: block;
         height: 50vh;
         object-position: top center;
         border-radius: 7px;
-
     }
 
-    /*hero*/
+    /* Hero Section */
     .hero__text {
-        font-size: 1.1renm;
+        font-size: 1.1rem;
     }
 
     .hero__about {
@@ -432,15 +438,22 @@ body {
         font-weight: 600;
     }
 
-    /*FOOTER*/
+    /* Footer */
     .footer {
         margin-top: 25px;
         border-top-right-radius: 14px;
         border-top-left-radius: 14px;
     }
-
 }
 
-@media (min-width: 300px) and (max-width: 700px){
+@media (min-width: 100px) and (max-width: 480px) {
+    .proyects__contain {
+        grid-auto-rows: 90vh;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 
+    .project-text {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
