@@ -14,25 +14,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <!--  Favicon -->
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png"> -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon16x16.png">
+    <!-- <meta name="msapplication-TileColor" content="#aaa">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#aaa"> -->
 </head>
 
 <body>
     <header class="header">
         <nav class="nav">
             <div class="nav__logo">
-                <h2 class="nav__title">Zetflix</h2>
+                <img class="nav__img" src="img/favicon/favicon128x128.png" alt="icono del sitio web">
+                <h3 class="nav__text">Zetflix</h3>
             </div>
             <div class="nav__link-contain ">
-                <ul class="nav__links nav__link--menu">
+                <ul class="nav__links  nav__link--menu">
                     <li class="nav__items"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__items"><a href="#aboutme" class="nav__link">About us</a></li>
                     <li class="nav__items"><a href="#proyects" class="nav__link">Proyects</a></li>
                     <li class="nav__items"><a href="#contacts" class="nav__link">Contacts</a></li>
-
                 </ul>
             </div>
             <div class="nav__menu">
-                <img class="nav__menu-img" src="img/svg-img/menu.svg" alt="imagen del logo">
+                <img class="nav__menu-img" src="/img/svg-img/menu.svg" alt="imagen del logo">
             </div>
         </nav>
 
@@ -47,18 +64,43 @@
     </header>
 
     <main class="main">
-        <section id="aboutme" class="section-about">
-            <div class="about container">
-                <div class="about-item about-text-contain">
-                    <h2 class="about__title title">About us?</h2>
-                    <p class="about__paragrahp">
-                        Currently, this team is made up of only one person, which is me... my name is Brayan Palacios,
-                        self-taught Front-End. </p>
+
+        <section class="container-AboutTech">
+            <article id="aboutme" class="section-about">
+                <div class="about container">
+                    <div class="about-item about-text-contain">
+                        <h4 class="title">About us?</h4>
+                        <p class="about__paragrahp">
+                            Currently, this team is made up of only one person, which is me... my name is Brayan
+                            Palacios,
+                            self-taught Front-End. </p>
+                    </div>
+                    <div class="about-item about-img-contain">
+                        <img src="img/main-img/desarrolladores.jpg" alt="imagen fotografica de un grupo de personas">
+                    </div>
                 </div>
-                <div class="about-item about-img-contain">
-                    <img src="img/main-img/desarrolladores.jpg" alt="imagen fotografica de un grupo de personas">
+            </article>
+
+            <article class="tech-contain container">
+                <h4 class="title">Habilidades</h4>
+                <div class="tech-container container">
+                    <div class="tech-items">
+                        <h5 class="tech-text">HTML</h5>
+                    </div>
+                    <div class="Tech-items">
+                        <h5 class="tech-text">CSS</h5>
+                    </div>
+                    <div class="Tech-items">
+                        <h5 class="tech-text">javascript</h5>
+                    </div>
+                    <div class="Tech-items">
+                        <h5 class="tech-text">Aprendiendo Sass</h5>
+                    </div>
+                    <div class="Tech-items">
+                        <h5 class="tech-text">Aprendiendo React</h5>
+                    </div>
                 </div>
-            </div>
+            </article>
         </section>
 
         <section id="proyects">
@@ -67,9 +109,6 @@
             </div>
             <div class="proyects__contain container">
                 <article class="proyects__preview">
-                    <div class="proyects__preview-img">
-                        <img class="proyects_img" src="img/main-img/Galeria.png" alt="vista previa del proyecto 1">
-                    </div>
                     <div class="project-text">
                         <h3 class="proyects__preview-title">Galeria de imagenes</h3>
                         <a class="btn-go" href="https://brayanty.github.io/Galeria/" target="_blank"
@@ -77,91 +116,64 @@
                     </div>
                 </article>
                 <article class="proyects__preview">
-                    <div class="proyects__preview-img">
-                        <img class="proyects_img" src="img/main-img/Lapto.jpg" alt="vista previa del proyecto 2">
+                    <div class="project-text">
+                        <h3 class="proyects__preview-title">Galeria de imagenes</h3>
+                        <a class="btn-go" href="https://brayanty.github.io/Galeria/" target="_blank"
+                            rel="noopener noreferrer">Ir</a>
                     </div>
-                    <h3 class="proyects__preview-title">Pagina de un Centro Comercial</h3>
                 </article>
                 <article class="proyects__preview">
-                    <div class="proyects__preview-img">
-                        <img class="proyects_img" src="img/main-img/Lapto.jpg" alt="vista previa del proyecto 3">
+                    <div class="project-text">
+                        <h3 class="proyects__preview-title">Galeria de imagenes</h3>
+                        <a class="btn-go" href="https://brayanty.github.io/Galeria/" target="_blank"
+                            rel="noopener noreferrer">Ir</a>
                     </div>
-                    <h3 class="proyects__preview-title">Otra pagina </h3>
                 </article>
                 <article class="proyects__preview">
-                    <div class="proyects__preview-img">
-                        <img class="proyects_img" src="img/main-img/Lapto.jpg" alt="vista previa del proyecto 1">
+                    <div class="project-text">
+                        <h3 class="proyects__preview-title">Galeria de imagenes</h3>
+                        <a class="btn-go" href="https://brayanty.github.io/Galeria/" target="_blank"
+                            rel="noopener noreferrer">Ir</a>
                     </div>
-                    <h3 class="proyects__preview-title">Pagina para un medico</h3>
                 </article>
                 <article class="proyects__preview">
-                    <div class="proyects__preview-img">
-                        <img class="proyects_img" src="img/main-img/Lapto.jpg" alt="vista previa del proyecto 2">
+                    <div class="project-text">
+                        <h3 class="proyects__preview-title">Galeria de imagenes</h3>
+                        <a class="btn-go" href="https://brayanty.github.io/Galeria/" target="_blank"
+                            rel="noopener noreferrer">Ir</a>
                     </div>
-                    <h3 class="proyects__preview-title">Pagina de un Centro Comercial</h3>
                 </article>
                 <article class="proyects__preview">
-                    <div class="proyects__preview-img">
-                        <img class="proyects_img" src="img/main-img/Lapto.jpg" alt="vista previa del proyecto 3">
+                    <div class="project-text">
+                        <h3 class="proyects__preview-title">Galeria de imagenes</h3>
+                        <a class="btn-go" href="https://brayanty.github.io/Galeria/" target="_blank"
+                            rel="noopener noreferrer">Ir</a>
                     </div>
-                    <h3 class="proyects__preview-title">Otra pagina </h3>
                 </article>
                 <article class="proyects__preview">
-                    <div class="proyects__preview-img">
-                        <img class="proyects_img" src="img/main-img/Lapto.jpg" alt="vista previa del proyecto 3">
+                    <div class="project-text">
+                        <h3 class="proyects__preview-title">Galeria de imagenes</h3>
+                        <a class="btn-go" href="https://brayanty.github.io/Galeria/" target="_blank"
+                            rel="noopener noreferrer">Ir</a>
                     </div>
-                    <h3 class="proyects__preview-title">Otra pagina </h3>
                 </article>
                 <article class="proyects__preview">
-                    <div class="proyects__preview-img">
-                        <img class="proyects_img" src="img/main-img/Lapto.jpg" alt="vista previa del proyecto 3">
+                    <div class="project-text">
+                        <h3 class="proyects__preview-title">Galeria de imagenes</h3>
+                        <a class="btn-go" href="https://brayanty.github.io/Galeria/" target="_blank"
+                            rel="noopener noreferrer">Ir</a>
                     </div>
-                    <h3 class="proyects__preview-title">Otra pagina </h3>
                 </article>
                 <article class="proyects__preview">
-                    <div class="proyects__preview-img">
-                        <img class="proyects_img" src="img/main-img/Lapto.jpg" alt="vista previa del proyecto 3">
+                    <div class="project-text">
+                        <h3 class="proyects__preview-title">Galeria de imagenes</h3>
+                        <a class="btn-go" href="https://brayanty.github.io/Galeria/" target="_blank"
+                            rel="noopener noreferrer">Ir</a>
                     </div>
-                    <h3 class="proyects__preview-title">Otra pagina </h3>
-                </article>
-                <article class="proyects__preview">
-                    <div class="proyects__preview-img">
-                        <img class="proyects_img" src="img/main-img/Lapto.jpg" alt="vista previa del proyecto 3">
-                    </div>
-                    <h3 class="proyects__preview-title">Otra pagina </h3>
-                </article>
-                <article class="proyects__preview">
-                    <div class="proyects__preview-img">
-                        <img class="proyects_img" src="img/main-img/Lapto.jpg" alt="vista previa del proyecto 3">
-                    </div>
-                    <h3 class="proyects__preview-title">Otra pagina </h3>
-                </article>
-                <article class="proyects__preview">
-                    <div class="proyects__preview-img">
-                        <img class="proyects_img" src="img/main-img/Lapto.jpg" alt="vista previa del proyecto 3">
-                    </div>
-                    <h3 class="proyects__preview-title">Otra pagina </h3>
-
                 </article>
             </div>
         </section>
 
-        <section class="technologies">
-            <h4 class="technologies-subtitle">Technologies used</h4>
-            <div class="technologies-container container">
-                <div class="technologies-contain-img">
-                    <img class="technologies-img" src="img/svg-techs/html.svg" alt="html">
-                </div>
-                <div class="technologies-contain-img">
-                    <img class="technologies-img" src="img/svg-techs/css.svg" alt="css">
-                </div>
-                <div class="technologies-contain-img">
-                    <img class="technologies-img" src="img/svg-techs/javascript_icon_130900.svg" alt="javascript">
-                </div>
-
-            </div>
-
-        </section>
     </main>
 
     <footer id="contacts" class="footer container">
@@ -172,8 +184,8 @@
                 </li>
                 <li class="nav__items "><a href="https://github.com/brayanty" class="nav__link" target="_blank"
                         rel="noopener noreferrer"><i class="fa-brands fa-github fa-lg"></i></a></li>
-                <li class="nav__items "><a href="mailto:2003brayan2@gmail.com" class="nav__link" target="_blank"
-                        rel="noopener noreferrer"><i class="fa-solid fa-envelope fa-lg"></i></a></li>
+                <!-- <li class="nav__items "><a href="mailto:2003brayan2@gmail.com" class="nav__link" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-solid fa-envelope fa-lg"></i></a></li> -->
                 <li class="nav__items "><a href="https://twitter.com/ElBrayanP21" class="nav__link" target="_blank"
                         rel="noopener noreferrer"><i class="fa-brands fa-x-twitter fa-lg"></i></a></li>
 
@@ -187,6 +199,7 @@
     <script src="js/menu.js"></script>
     <script src="js/navbarStiky.js"></script>
     <script src="https://kit.fontawesome.com/0effce0025.js" crossorigin="anonymous"></script>
+    <script src="js/proyectGenerator.js"></script>
 </body>
 
 </html>
