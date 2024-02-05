@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Font Aweso -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-    
+
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,20 +37,19 @@
     <header class="header">
         <nav class="nav">
             <div class="nav__logo">
-                <img class="nav__img" src="/img/favicon/favicon128x128.png" alt="icono del sitio web">
+                <img class="nav__img" src="img/favicon/favicon128x128.png" alt="icono del sitio web">
                 <h3 class="nav__text">Zetflix</h3>
             </div>
             <div class="nav__link-contain ">
-                <ul class="nav__links nav__link--menu">
+                <ul class="nav__links  nav__link--menu">
                     <li class="nav__items"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__items"><a href="#aboutme" class="nav__link">About us</a></li>
                     <li class="nav__items"><a href="#proyects" class="nav__link">Proyects</a></li>
                     <li class="nav__items"><a href="#contacts" class="nav__link">Contacts</a></li>
-
                 </ul>
             </div>
             <div class="nav__menu">
-                <img class="nav__menu-img" src="img/svg-img/menu.svg" alt="imagen del logo">
+                <img class="nav__menu-img" src="/img/svg-img/menu.svg" alt="imagen del logo">
             </div>
         </nav>
 
@@ -65,18 +64,43 @@
     </header>
 
     <main class="main">
-        <section id="aboutme" class="section-about">
-            <div class="about container">
-                <div class="about-item about-text-contain">
-                    <h2 class="about__title title">About us?</h2>
-                    <p class="about__paragrahp">
-                        Currently, this team is made up of only one person, which is me... my name is Brayan Palacios,
-                        self-taught Front-End. </p>
+
+        <section class="container-AboutTech">
+            <article id="aboutme" class="section-about">
+                <div class="about container">
+                    <div class="about-item about-text-contain">
+                        <h4 class="title">About us?</h4>
+                        <p class="about__paragrahp">
+                            Currently, this team is made up of only one person, which is me... my name is Brayan
+                            Palacios,
+                            self-taught Front-End. </p>
+                    </div>
+                    <div class="about-item about-img-contain">
+                        <img src="img/main-img/desarrolladores.jpg" alt="imagen fotografica de un grupo de personas">
+                    </div>
                 </div>
-                <div class="about-item about-img-contain">
-                    <img src="img/main-img/desarrolladores.jpg" alt="imagen fotografica de un grupo de personas">
+            </article>
+
+            <article class="tech-contain container">
+                <h4 class="title">Habilidades</h4>
+                <div class="tech-container container">
+                    <div class="tech-items">
+                        <h5 class="tech-text">HTML</h5>
+                    </div>
+                    <div class="Tech-items">
+                        <h5 class="tech-text">CSS</h5>
+                    </div>
+                    <div class="Tech-items">
+                        <h5 class="tech-text">javascript</h5>
+                    </div>
+                    <div class="Tech-items">
+                        <h5 class="tech-text">Aprendiendo Sass</h5>
+                    </div>
+                    <div class="Tech-items">
+                        <h5 class="tech-text">Aprendiendo React</h5>
+                    </div>
                 </div>
-            </div>
+            </article>
         </section>
 
         <section id="proyects">
@@ -150,27 +174,6 @@
             </div>
         </section>
 
-        <section class="tech-contain container">
-            <h4 class="tech-subtitle title">Habilidades</h4>
-            <div class="tech-container container">
-                <div class="Tech-items">
-                    <h5 class="tech-text">HTML</h5>
-                </div>
-                <div class="Tech-items">
-                    <h5 class="tech-text">CSS</h5>
-                </div>
-                <div class="Tech-items">
-                    <h5 class="tech-text">javascript</h5>
-                </div>
-                <div class="Tech-items">
-                    <h5 class="tech-text">Aprendiendo Sass</h5>
-                </div>
-                <div class="Tech-items">
-                    <h5 class="tech-text">Aprendiendo React</h5>
-                </div>
-            </div>
-
-        </section>
     </main>
 
     <footer id="contacts" class="footer container">
@@ -181,8 +184,8 @@
                 </li>
                 <li class="nav__items "><a href="https://github.com/brayanty" class="nav__link" target="_blank"
                         rel="noopener noreferrer"><i class="fa-brands fa-github fa-lg"></i></a></li>
-                <li class="nav__items "><a href="mailto:2003brayan2@gmail.com" class="nav__link" target="_blank"
-                        rel="noopener noreferrer"><i class="fa-solid fa-envelope fa-lg"></i></a></li>
+                <!-- <li class="nav__items "><a href="mailto:2003brayan2@gmail.com" class="nav__link" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-solid fa-envelope fa-lg"></i></a></li> -->
                 <li class="nav__items "><a href="https://twitter.com/ElBrayanP21" class="nav__link" target="_blank"
                         rel="noopener noreferrer"><i class="fa-brands fa-x-twitter fa-lg"></i></a></li>
 
